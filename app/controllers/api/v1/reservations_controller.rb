@@ -24,7 +24,7 @@ module Api
         end
 
         if @reservation
-          render json: @reservation, status: :created#, location: @reservation
+          render json: @reservation, status: :created
         else
           render json: @reservation.errors, status: :unprocessable_entity
         end
